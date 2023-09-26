@@ -1,21 +1,37 @@
 /* styles.css */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+/* Color Variables */
+:root {
+  --primary-color: #05F2DB;
+  --secondary-color: #758C72;
+  --tertiary-color: #B6BFB4;
+  --quaternary-color: #D9D496;
+  --text-color: #0D0D0D;
+}
+
 /* Reset and Globals */
 body {
   font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
-  background-color: #ffffff;  /* White Background */
-  color: #000000;  /* Black Text */
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
 
+/* Centering content */
+.center-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
 /* For Primary Menu */
 nav ul {
-  background-color: #333;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   overflow: hidden;
-  color: white;
 }
 
 nav ul li {
@@ -26,20 +42,13 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 }
 
 /* Main Content */
 .main {
   padding: 20px;
-}
-
-/* Centering content */
-.center-content {
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
 }
 
 /* About Page Photo */
@@ -63,18 +72,18 @@ nav ul li a {
 /* Headers */
 h1, h2, h3 {
   text-align: center;
-  color: #000000;  /* Black Text */
+  color: var(--secondary-color);
 }
 
 /* Links */
 a {
-  color: #000000;  /* Black Text */
+  color: var(--quaternary-color);
 }
 
 /* Footer */
 .site-footer {
-  background-color: #ffffff;  /* White Background */
-  color: #000000;  /* Black Text */
+  background-color: var(--primary-color);
+  color: var(--text-color);
   text-align: center;
   padding: 10px;
   position: fixed;
