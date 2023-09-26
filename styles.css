@@ -90,3 +90,12 @@ a {
   bottom: 0;
   width: 100%;
 }
+
+/* New Styles: Centering content in header and footer */
+header, footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
