@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Page</title>
+</head>
+<body>
+
+<form id="emailForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+document.getElementById('emailForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+
+  // Here you would make an API request to your third-party service
+});
+</script>
+
+</body>
+</html>
