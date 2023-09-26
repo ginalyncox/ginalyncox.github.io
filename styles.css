@@ -1,0 +1,19 @@
+.primary-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.primary-menu li {
+  margin-right: 20px;
+}
+
+.primary-menu a {
+  text-decoration: none;
+  color: darkgreen;  /* Since you prefer a dark green color scheme */
+}
+
+.primary-menu a:hover {
+  text-decoration: underline;
+}
