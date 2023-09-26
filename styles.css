@@ -60,7 +60,7 @@ nav ul li a {
 /* Main Content */
 .main {
   padding: 20px;
-  text-align: justify; /* Updated */
+  text-align: center; /* Updated */
 }
 
 /* About Page Photo */
@@ -79,7 +79,7 @@ nav ul li a {
 
 #bio p {
   margin-bottom: 20px;
-  text-align: justify; /* Updated */
+  text-align: center; /* Updated */
 }
 
 /* Headers */
