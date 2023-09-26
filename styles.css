@@ -44,7 +44,7 @@ nav ul {
 }
 
 nav ul li {
-  float: center;
+  float: left;
   display: block;
   text-align: center;
   padding: 14px 16px;
