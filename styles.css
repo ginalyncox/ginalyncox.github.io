@@ -3,18 +3,18 @@
 
 /* Color Variables */
 :root {
-  --primary-color: #05F2DB;
-  --secondary-color: #758C72;
-  --tertiary-color: #B6BFB4;
-  --quaternary-color: #D9D496;
-  --text-color: #0D0D0D;
+  --primary-color: #228B22; /* Forest Green */
+  --secondary-color: #808000; /* Olive Green */
+  --tertiary-color: #B7410E; /* Rust */
+  --quaternary-color: #483C32; /* Taupe */
+  --text-color: #F5F5DC; /* Beige */
 }
 
 /* Reset and Globals */
 body {
   font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
-  background-color: var(--tertiary-color);
+  background-color: var(--quaternary-color);
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -77,7 +77,7 @@ h1, h2, h3 {
 
 /* Links */
 a {
-  color: var(--quaternary-color);
+  color: var(--tertiary-color);
 }
 
 /* Footer */
@@ -89,13 +89,4 @@ a {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-/* New Styles: Centering content in header and footer */
-header, footer {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
