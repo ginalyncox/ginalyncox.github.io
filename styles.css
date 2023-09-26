@@ -25,6 +25,7 @@ body {
   max-width: 800px;
   margin: auto;
   text-align: center;
+  padding: 0 20px; /* Add padding to sides */
 }
 
 /* Header */
@@ -41,10 +42,11 @@ nav ul {
   background-color: var(--primary-color);
   color: var(--text-color);
   overflow: hidden;
+  display: flex; /* Switch to flex layout */
+  justify-content: center;
 }
 
 nav ul li {
-  float: left;
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -62,7 +64,7 @@ nav ul li a {
 
 /* About Page Photo */
 .about-photo {
-  width: 300px;
+  max-width: 100%; /* Responsive image */
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -96,7 +98,16 @@ footer {
   align-items: center;
   background-color: var(--primary-color);
   color: var(--text-color);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer {
+    position: static; /* Disable fixed position */
+  }
 }
