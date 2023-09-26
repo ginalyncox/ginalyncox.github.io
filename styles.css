@@ -24,7 +24,7 @@ body {
 .center-content {
   max-width: 800px;
   margin: auto;
-  text-align: justify; /* Updated */
+  text-align: center; /* Updated */
   padding: 0 20px;
 }
 
