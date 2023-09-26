@@ -24,8 +24,8 @@ body {
 .center-content {
   max-width: 800px;
   margin: auto;
-  text-align: center;
-  padding: 0 20px; /* Add padding to sides */
+  text-align: justify; /* Updated */
+  padding: 0 20px;
 }
 
 /* Header */
@@ -42,13 +42,13 @@ nav ul {
   background-color: var(--primary-color);
   color: var(--text-color);
   overflow: hidden;
-  display: flex; /* Switch to flex layout */
+  display: flex;
   justify-content: center;
 }
 
 nav ul li {
   display: block;
-  text-align: center;
+  text-align: center; /* Menu items still centered */
   padding: 14px 16px;
 }
 
@@ -60,11 +60,12 @@ nav ul li a {
 /* Main Content */
 .main {
   padding: 20px;
+  text-align: justify; /* Updated */
 }
 
 /* About Page Photo */
 .about-photo {
-  max-width: 100%; /* Responsive image */
+  max-width: 100%;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -78,6 +79,7 @@ nav ul li a {
 
 #bio p {
   margin-bottom: 20px;
+  text-align: justify; /* Updated */
 }
 
 /* Headers */
@@ -106,8 +108,8 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  
+
   footer {
-    position: static; /* Disable fixed position */
+    position: static;
   }
 }
