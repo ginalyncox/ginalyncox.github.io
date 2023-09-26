@@ -3,18 +3,18 @@
 
 /* Color Variables */
 :root {
-  --primary-color: #FFFFFF; /* White */
-  --secondary-color: #333333; /* Dark Gray */
-  --tertiary-color: #F2F2F2; /* Light Gray */
-  --quaternary-color: #000000; /* Black */
-  --text-color: #4D4D4D; /* Gray */
+  --primary-color: #228B22; /* Forest Green */
+  --secondary-color: #808000; /* Olive Green */
+  --tertiary-color: #B7410E; /* Rust */
+  --quaternary-color: #483C32; /* Taupe */
+  --text-color: #F5F5DC; /* Beige */
 }
 
 /* Reset and Globals */
 body {
   font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
-  background-color: var(--tertiary-color);
+  background-color: var(--quaternary-color);
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -25,6 +25,15 @@ body {
   max-width: 800px;
   margin: auto;
   text-align: center;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
 }
 
 /* For Primary Menu */
@@ -81,11 +90,12 @@ a {
 }
 
 /* Footer */
-.site-footer {
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-color);
   color: var(--text-color);
-  text-align: center;
-  padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
