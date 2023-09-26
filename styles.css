@@ -3,11 +3,11 @@
 
 /* Color Variables */
 :root {
-  --primary-color: #228B22; /* Forest Green */
-  --secondary-color: #808000; /* Olive Green */
-  --tertiary-color: #B7410E; /* Rust */
-  --quaternary-color: #483C32; /* Taupe */
-  --text-color: #F5F5DC; /* Beige */
+  --primary-color: ##FFFFFF;
+  --secondary-color: #000000;
+  --tertiary-color: #778F73;
+  --quaternary-color: #000000;
+  --text-color: #000000;
 }
 
 /* Reset and Globals */
