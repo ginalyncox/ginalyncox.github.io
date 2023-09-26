@@ -71,4 +71,15 @@ body {
   bottom: 0;
   width: 100%;
 }
+/* styles.css */
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; /* optional, if you want it to take up the full viewport height */
+  margin: auto;
+}
+
 
