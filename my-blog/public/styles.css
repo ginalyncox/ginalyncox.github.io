@@ -1,3 +1,96 @@
-body {
-    font-family: Arial, sans-serif;
+/*BLOG styles.css */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Color Variables */
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #000000;
+  --tertiary-color: #778F73;
+  --quaternary-color: #FFFFFF;
+  --text-color: #000000;
 }
+
+/* Reset and Globals */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--quaternary-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Centering content */
+.center-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+
+/* For Primary Menu */
+nav ul {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* Main Content */
+.main {
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Headers */
+h1, h2, h3 {
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+/* Links */
+a {
+  color: var(--tertiary-color);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    position: static;
+  }
