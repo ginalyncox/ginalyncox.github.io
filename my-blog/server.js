@@ -16,3 +16,6 @@ mongoose.connect('mongodb://localhost:27017/myBlog', {
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });
+
+const blogRoutes = require('./blogRoutes');
+app.use('/api/blog', blogRoutes);
