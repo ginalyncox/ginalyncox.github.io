@@ -1,31 +1,40 @@
+require('dotenv').config(); // For environment variables
 const express = require('express');
 const mongoose = require('mongoose');
-
-// Import BlogPost model
-const BlogPost = require('./my-blog/models/BlogPost');
+const cors = require('cors');
 
 // Initialize Express App
 const app = express();
 
-// Middleware for body parsing
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// Middleware
+app.use(cors()); // CORS middleware
+app.use(express.json()); // For parsing application/json
+app.use(express.urlencoded({ extended: true })); // For parsing application/x-www-form-urlencoded
+
+// Static files
+app.use('/images', express.static(__dirname + '/my-blog/images'));
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/myBlog', {
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/myBlog';
+mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
 .then(() => console.log('MongoDB Connected'))
 .catch(err => console.log(err));
 
-// Include Routes
+// Routes
 const blogRoutes = require('./my-blog/routes/blogRoutes');
 app.use('/api/blog', blogRoutes);
 
-// Start the server on port 3000
-app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+// Global Error Handling
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
 });
-app.use('/images', express.static(__dirname + '/my-blog/images'));
 
+// Starting the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
