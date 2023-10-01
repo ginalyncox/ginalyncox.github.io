@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 // Import BlogPost model
-const BlogPost = require('./models/BlogPost');
+const BlogPost = require('./my-blog/models/BlogPost');
 
 // Initialize Express App
 const app = express();
@@ -20,7 +20,7 @@ mongoose.connect('mongodb://localhost:27017/myBlog', {
 .catch(err => console.log(err));
 
 // Include Routes
-const blogRoutes = require('./routes/blogRoutes');
+const blogRoutes = require('./my-blog/routes/blogRoutes');
 app.use('/api/blog', blogRoutes);
 
 // Start the server on port 3000
