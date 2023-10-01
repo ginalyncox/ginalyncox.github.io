@@ -27,3 +27,5 @@ app.use('/api/blog', blogRoutes);
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });
+app.use('/images', express.static(__dirname + '/my-blog/images'));
+
