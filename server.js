@@ -27,13 +27,3 @@ app.use('/api/blog', blogRoutes);
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });
-
-// Test post (comment out when done testing)
-const testPost = new BlogPost({
-  title: "Test Post",
-  content: "This is a test post.",
-});
-
-testPost.save()
-  .then(() => console.log("Test post saved"))
-  .catch(err => console.log("Could not save test post: ", err));
