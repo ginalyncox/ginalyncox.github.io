@@ -52,32 +52,11 @@ nav ul li a {
   color: var(--text-color);
   text-decoration: none;
 }
-
 /* Main Content */
 .main {
   padding: 20px;
   text-align: center;
 }
-
-/* About Page Photo */
-.about-photo {
-  max-width: 300px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Bio Section */
-#bio h2 {
-  font-size: 1.5em;
-  margin-top: 20px;
-}
-
-#bio p {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 /* Headers */
 h1, h2, h3 {
   text-align: center;
@@ -99,6 +78,7 @@ footer {
   color: var(--text-color);
     position: static;
   }
+/* Sections */
   .intro {
     text-align: center;
   }
