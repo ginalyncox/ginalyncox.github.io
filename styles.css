@@ -18,9 +18,6 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 0;
-}
-
-body {
   max-width: 800px;
   margin: auto;
   justify-content: center;
@@ -85,6 +82,7 @@ nav ul li a {
 h1, h2, h3 {
   text-align: center;
   color: var(--secondary-color);
+  font-weight: bold;
 }
 
 /* Links */
@@ -100,14 +98,6 @@ footer {
   background-color: var(--primary-color);
   color: var(--text-color);
 }
-
-/* Media Query for Mobile Devices */
-@media only screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
   footer {
     position: static;
   }
