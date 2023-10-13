@@ -97,7 +97,17 @@ footer {
   align-items: center;
   background-color: var(--primary-color);
   color: var(--text-color);
-}
-  footer {
     position: static;
+  }
+  .intro {
+    text-align: center;
+  }
+  .cert{
+    text-align: center;
+  }
+  .gangier {
+    text-align: center;
+  }
+  .affiliate {
+    text-align: center;
   }
