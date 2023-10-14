@@ -1,21 +1,12 @@
 /* index.css */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/* Color Variables */
-:root {
-  --primary-color: rgba(255, 255, 255, 1);  /* Bright White */
-  --secondary-color: rgba(0, 0, 0, 1);      /* Black */
-  --tertiary-color: rgba(119, 143, 115, 1); /* Soft Sage Green */
-  --quaternary-color: rgba(53, 67, 55, 1);  /* Darker Green */
-  --text-color: rgba(255, 255, 255, 1);     /* White for contrast on dark bg */
-}
-
 /* Reset and Globals */
 body {
   font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
-  background-color: var(--quaternary-color); 
-  color: var(--text-color);
+  background-color: rgba(255, 255, 255, 1);  /* Bright White */
+  color: rgba(0, 0, 0, 1);      /* Black */
   margin: 0;
   padding: 0;
   max-width: 800px;
@@ -30,14 +21,14 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--primary-color);
-  color: var(--secondary-color); /* Black text for contrast on white bg */
+  background-color: rgba(255, 255, 255, 1);  /* Bright White */
+  color: rgba(0, 0, 0, 1);      /* Black */
 }
 
 /* For Primary Menu */
 nav ul {
-  background-color: var(--tertiary-color); /* Soft Sage Green for menu */
-  color: var(--text-color);
+  background-color: rgba(255, 255, 255, 1);  /* Bright White */
+    color: rgba(0, 0, 0, 1);      /* Black */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -50,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--text-color); /* White for contrast */
+  color: rgba(0, 0, 0, 1);      /* Black */
   text-decoration: none;
 }
 
@@ -63,15 +54,15 @@ nav ul li a {
 /* Headers */
 h1, h2, h3 {
   text-align: center;
-  color: var(--primary-color); /* Bright White headers for emphasis */
+  color: rgba(0, 0, 0, 1);      /* Black */
   font-weight: bold;
-  background-color: var(--tertiary-color); /* Soft Sage Green bg for headers */
+  background-color: rgba(119, 143, 115, 1); /* Soft Sage Green */
   padding: 5px; /* Added some padding for the headers */
 }
 
 /* Links */
 a {
-  color: var(--primary-color); /* Bright White for links */
+  color: rgba(53, 67, 55, 1);  /* Darker Green */
   text-decoration: underline;  /* Underline for better clarity */
 }
 
@@ -80,8 +71,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--tertiary-color); /* Soft Sage Green for footer */
-  color: var(--text-color);
+  background-color: rgba(255, 255, 255, 1);  /* Bright White */
+  color: rgba(0, 0, 0, 1);      /* Black */
   position: static;
 }
 
@@ -93,6 +84,6 @@ footer {
 
 /* Additional hover effect for links */
 a:hover {
-  color: var(--tertiary-color);
-  background-color: var(--primary-color);
+  color: rgba(119, 143, 115, 1); /* Soft Sage Green */
+  background-color: rgba(255, 255, 255, 1);  /* Bright White */
 }
