@@ -45,12 +45,6 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Main Content */
-.main {
-  padding: 20px;
-  text-align: center;
-}
-
 /* Headers */
 h1, h2, h3 {
   text-align: center;
@@ -77,9 +71,13 @@ footer {
 }
 
 /* Sections */
-.intro, .cert, .ganjier, .affiliate, .youtube, .about, .contact, .logo {
+.intro, .cert, .ganjier, .affiliate, .youtube, .contact, .logo {
   text-align: center;
-  padding: 20px 0; /* Added some vertical padding for sections */
+  padding: 5px 0; /* Added some vertical padding for sections */
+}
+.about {
+    text-align: left;
+  padding: 5px 0; /* Added some vertical padding for sections */
 }
 
 /* Additional hover effect for links */
