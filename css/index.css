@@ -1,20 +1,20 @@
-/* styles.css */
+/* index.css */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* Color Variables */
 :root {
-  --primary-color: #FFFFFF;
-  --secondary-color: #000000;
-  --tertiary-color: #778F73;
-  --quaternary-color: #FFFFFF;
-  --text-color: #000000;
+  --primary-color: rgba(255, 255, 255, 1);  /* Bright White */
+  --secondary-color: rgba(0, 0, 0, 1);      /* Black */
+  --tertiary-color: rgba(119, 143, 115, 1); /* Soft Sage Green */
+  --quaternary-color: rgba(53, 67, 55, 1);  /* Darker Green */
+  --text-color: rgba(255, 255, 255, 1);     /* White for contrast on dark bg */
 }
 
 /* Reset and Globals */
 body {
   font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
-  background-color: var(--quaternary-color);
+  background-color: var(--quaternary-color); 
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -31,11 +31,12 @@ header {
   align-items: center;
   flex-direction: column;
   background-color: var(--primary-color);
+  color: var(--secondary-color); /* Black text for contrast on white bg */
 }
 
 /* For Primary Menu */
 nav ul {
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color); /* Soft Sage Green for menu */
   color: var(--text-color);
   overflow: hidden;
   display: flex;
@@ -49,24 +50,29 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--text-color);
+  color: var(--text-color); /* White for contrast */
   text-decoration: none;
 }
+
 /* Main Content */
 .main {
   padding: 20px;
   text-align: center;
 }
+
 /* Headers */
 h1, h2, h3 {
   text-align: center;
-  color: var(--secondary-color);
+  color: var(--primary-color); /* Bright White headers for emphasis */
   font-weight: bold;
+  background-color: var(--tertiary-color); /* Soft Sage Green bg for headers */
+  padding: 5px; /* Added some padding for the headers */
 }
 
 /* Links */
 a {
-  color: var(--tertiary-color);
+  color: var(--primary-color); /* Bright White for links */
+  text-decoration: underline;  /* Underline for better clarity */
 }
 
 /* Footer */
@@ -74,29 +80,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color); /* Soft Sage Green for footer */
   color: var(--text-color);
-    position: static;
-  }
+  position: static;
+}
+
 /* Sections */
-  .intro {
-    text-align: center;
-  }
-  .cert {
-    text-align: center;
-  }
-  .ganjier {
-    text-align: center;
-  }
-  .affiliate {
-    text-align: center;
-  }
-  .youtube {
-    text-align: center;
-  }
-  .about {
-    text-align: center;
-  }
-  .contact {
-    text-align: center;
-  }
+.intro, .cert, .ganjier, .affiliate, .youtube, .about, .contact {
+  text-align: center;
+  padding: 20px 0; /* Added some vertical padding for sections */
+}
+
+/* Additional hover effect for links */
+a:hover {
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+}
