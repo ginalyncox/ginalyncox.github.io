@@ -77,7 +77,7 @@ footer {
 }
 
 /* Sections */
-.intro, .cert, .ganjier, .affiliate, .youtube, .about, .contact {
+.intro, .cert, .ganjier, .affiliate, .youtube, .about, .contact, .logo {
   text-align: center;
   padding: 20px 0; /* Added some vertical padding for sections */
 }
