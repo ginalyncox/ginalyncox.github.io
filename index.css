@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Reset and Globals */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #FFFFFF;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for content */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Header Box */
+.header-box {
+  background-color: #778F73;
+  height: 20px; /* Decrease the height to reduce space */
+}
+
+/* Header & Header Image */
+header {
+  background-color: transparent;
+  padding: 1px 0;
+}
+
+header img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+/* Intro Section */
+.intro {
+  background-color: #FFFFFF;
+  color: #000000;
+  text-align: center;
+  padding: 1px;
+  margin: 1px 0;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 20px 0;
+}
+
+table td:first-child {
+  font-weight: bold;
+}
+
+td {
+  padding: 12px 20px;
+}
+
+tr {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+/* Button Styling */
+.btn-more {
+  padding: 10px 20px;
+  background-color: #778F73;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-more:hover {
+  background-color: #355D3A;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Connect Section */
+.connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Social Media Icons */
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1px;
+}
+
+.social-icon {
+  color: #000000;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Contact Info */
+.contact-info {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #778F73;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  table tr {
+    margin: 0 0 1rem 0;
+    display: block;
+  }
+
+  table td {
+    margin-bottom: 0.625rem;
+    display: block;
+    position: relative;
+  }
+
+  table td:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  table td:nth-of-type(1):before { content: "Role:"; }
+  table td:nth-of-type(2):before { content: "Description:"; }
+  table td:nth-of-type(3):before { content: "Action:"; }
+}
+
+/* Scroll to Top Link */
+#scrollTop {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  background-color: #778F73;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+#scrollTop:hover {
+  background-color: #355D3A;
+}
+/* Center the table */
+.table-container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px; /* Adjust this width as needed */
+}
+
+/* Style the table rows */
+table tr {
+  vertical-align: top;
+}
+
+/* Add space between header and links */
+table tr:first-child td {
+  padding-bottom: 10px;
+}
+/* Center the table contents */
+.table-container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px; /* Adjust this width as needed */
+}
+
+/* Style the table rows */
+table.table-center {
+  width: 100%;
+  text-align: center;
+}
+
+/* Add space between header and links */
+table.table-center tr:first-child td {
+  padding-bottom: 10px;
+}
+
+/* Center the header */
+.text-center {
+  text-align: center;
+}
+h2, h1 {
+  text-transform: uppercase;
+}
+table, table td, table th {
+  text-transform: uppercase;
+}
+/* Welcome Section */
+.welcome {
+  background-color: #F7F7F7;
+  color: #333;
+  padding: 20px 0; /* Adjust the top padding to create space */
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 32px; /* Increase font size for the main heading */
+  margin-bottom: 20px; /* Add spacing below the heading */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+}
+
+.welcome p {
+  font-size: 18px; /* Adjust font size for paragraph text */
+  line-height: 1.5; /* Improve line spacing for readability */
+  text-align: justify; /* Change the text alignment to justified */
+}
+
+/* Add a border for separation */
+.welcome-border {
+  border-top: 2px solid #778F73;
+  margin-top: 20px;
+}
