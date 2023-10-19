@@ -40,8 +40,22 @@ body {
   font-size: 18px;
   line-height: 1.5;
 }
-
-/* Reuse the .btn-more from index.css */
+/* Button Styling */
 .btn-more {
-  /* Existing styles here */
+  padding: 10px 20px;
+  background-color: #778F73;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-more:hover {
+  background-color: #355D3A;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
