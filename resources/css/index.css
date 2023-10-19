@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap'); /* Added Georgia serif font */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 /* Reset and Globals */
@@ -159,8 +160,8 @@ footer {
 #scrollTop:hover {
   background-color: #355D3A;
 }
-/* Blog Newspaper Layout */
 
+/* Blog Newspaper Layout */
 .blog-newspaper {
   display: flex;
   justify-content: space-between;
@@ -169,6 +170,11 @@ footer {
 
 .main-article {
   flex: 3;
+  font-family: 'Georgia', serif;  /* Use serif font for newspaper feel */
+
+  /* Fallback for older browsers */
+  display: inline-block;
+  
   column-count: 2;  /* Creates two columns for the text */
   column-gap: 40px; /* Space between columns */
   margin: 20px 0;
