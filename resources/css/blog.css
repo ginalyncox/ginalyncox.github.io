@@ -1,47 +1,47 @@
-/* Reset some default styles */
-body, h1, h2, p, a {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
+/* Import fonts and reset styles as done in index.css */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
-    line-height: 1.6;
-    background-color: #f4f4f4;
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #FFFFFF;
+  color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
-header, nav, main, footer {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
+/* Basic container setup, similar to your main site */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
 }
 
-header {
-    text-align: center;
-    border-bottom: 2px solid #333;
+/* Blog intro section */
+.blog-intro h1, .blog-intro p {
+  text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-bottom: 2px solid #333;
+/* Blog content and posts */
+.blog-content {
+  padding: 20px;
+  background-color: #F7F7F7;
 }
 
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: green;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s;
+.blog-post {
+  margin-bottom: 20px;
 }
 
-nav a:hover {
-    border-bottom: 2px solid green;
+.blog-post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-footer {
-    text-align: center;
-    margin-top: 40px;
+.blog-post p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Reuse the .btn-more from index.css */
+.btn-more {
+  /* Existing styles here */
 }
