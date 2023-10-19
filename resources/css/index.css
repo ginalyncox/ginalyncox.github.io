@@ -159,3 +159,33 @@ footer {
 #scrollTop:hover {
   background-color: #355D3A;
 }
+/* Blog Newspaper Layout */
+
+.blog-newspaper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.main-article {
+  flex: 3;
+  column-count: 2;  /* Creates two columns for the text */
+  column-gap: 40px; /* Space between columns */
+  margin: 20px 0;
+}
+
+.headline {
+  font-size: 36px;
+  column-span: all; /* Makes sure the headline spans both columns */
+}
+
+.byline {
+  font-style: italic;
+  column-span: all; /* Makes sure the byline spans both columns */
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
