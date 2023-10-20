@@ -43,10 +43,19 @@ nav li a:hover {
   background-color: #111;
 }
 
-/* Header Box */
 .header-box {
   background-color: #778F73;
   height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;  /* You can adjust the width */
 }
 
 /* Intro Section */
