@@ -27,7 +27,10 @@ header, nav ul {
   background-color: #FFFFFF;
 }
 
-nav li {
+h2 {
+  text-align: center;
+}
+  nav li {
   float: left;
 }
 
