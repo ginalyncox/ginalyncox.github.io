@@ -24,7 +24,7 @@ header, nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 
 nav li {
@@ -68,7 +68,7 @@ nav li a:hover {
 table {
   width: 100%;
   border-collapse: collapse;
-  text-align: left;
+  text-align: center;
   margin: 20px 0;
 }
 
