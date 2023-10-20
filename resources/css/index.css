@@ -30,7 +30,7 @@ header, nav ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;  /* You can adjust the width */
+  width: auto;
 }
 
 h2 {
