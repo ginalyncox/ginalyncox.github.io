@@ -26,6 +26,12 @@ header, nav ul {
   overflow: hidden;
   background-color: #FFFFFF;
 }
+.header-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;  /* You can adjust the width */
+}
 
 h2 {
   text-align: center;
